@@ -1,0 +1,6 @@
+
+@include media(500px){
+    .project-item{
+        flex-wrap: 'wrap';
+    }
+}
