@@ -1,6 +1,7 @@
 
-@include media(500px){
+@media screen and (max-width: 60em) {
     .project-item{
-        flex-wrap: 'wrap';
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
