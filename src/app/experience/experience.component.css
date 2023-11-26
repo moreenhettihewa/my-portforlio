@@ -1,0 +1,10 @@
+
+::ng-deep {
+  
+    .p-timeline-event-separator{
+        margin-left: -72em;
+    }
+}
+
+
+
