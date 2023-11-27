@@ -1,31 +1,24 @@
-<div>
-  <div style="margin: 0 5%" id="contact-view">
-    <div class="card flex" style="justify-content: center;">
-      <p>
-        Moreen Hettihewa  &nbsp;
-      </p>
-      <p>
-        <i class="fa fa-envelope" style="padding-right: 1em"></i>
-        <a href="mailto:moreenmadhushani@gmail.com" target="_blank">Email</a>
-        &nbsp;
+<div class="sub-container" id="contact-view">
+  <div class="card flex centered-item" >
+    <p>{{ contactData.name }} &nbsp;</p>
+    <p>
+      <i class="fa fa-envelope contact-item"></i>
+      <a href="mailto:${{ contactData.email }}" target="_blank">Email</a>
+      &nbsp;
 
-        <i class="fa fa-phone" style="padding-right: 1em"></i>
-        <a href="tel:+94762547107" target="_blank">+94 76 254 7107</a>
-        &nbsp;
+      <i class="fa fa-phone contact-item"></i>
+      <a href="tel:{{ contactData.phone }}">{{ contactData.phone }}</a>
+      &nbsp;
 
-        <i class="fa fa-linkedin" style="padding-right: 1em"></i>
-        <a href="https://www.linkedin.com/in/moreenhettihewa/" target="_blank"
-          >LinkedIn
-        </a>
-        &nbsp;
-        <i class="fa fa-github" style="padding-right: 1em"></i>
-        <a href="https://github.com/moreenhettihewa" target="_blank">GitHub </a>
-        &nbsp;
-      </p>
-      <br />
-
-    </div>
-
-    <p style="display: flex; justify-content: center;">Colombo, Sri Lanka</p>
+      <i class="fa fa-linkedin contact-item" ></i>
+      <a href="{{ contactData.linkedin }}" target="_blank">LinkedIn </a>
+      &nbsp;
+      <i class="fa fa-github contact-item"></i>
+      <a href="{{ contactData.github }}" target="_blank">GitHub </a>
+      &nbsp;
+    </p>
+    <br />
   </div>
+
+  <p class="centered-item">Colombo, Sri Lanka</p>
 </div>

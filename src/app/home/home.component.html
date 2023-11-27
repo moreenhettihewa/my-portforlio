@@ -1,23 +1,22 @@
-<div style="margin: 0 5%" id="home-view" #homeEl >
-  <div style="display: flex; justify-content: center">
+<div class="sub-container" id="home-view">
+  <div class="sub-header" style="justify-content: center">
     <p-image
       src="../../assets/portforlio_pic.png"
       alt="Image"
-      width="250"
-      [style]="{'border-radius': '50%'}"
+      width="400"
+      [style]="{ 'border-radius': '50%' }"
       shape="circle"
     ></p-image>
   </div>
 
-  <div style="display: flex; justify-content: center">
+  <div class="centered">
     <h1>
       I
       <i
         class="fa-duotone fa-apostrophe"
         style="
           font-size: 2rem;
-          --fa-primary-color: #427d9d;
-          --fa-secondary-color: #164863;
+          --fa-primary-color: #3b82f6;
           --fa-secondary-opacity: 0.9;
         "
       ></i>
@@ -25,22 +24,20 @@
     </h1>
     <h2 style="padding-top: 0.4em; padding-left: 0.5em">Moreen Hettihewa</h2>
   </div>
-  <div style="display: flex; justify-content: center;max-height: 2em;">
-    <h4>Senior Software Engineer</h4>
+  <div class="centered" style="max-height: 2em">
+    <h3>Senior Software Engineer</h3>
   </div>
-  <div style="display: flex; justify-content: center">
-    <h4>Colombo, Sri Lanka</h4>
+  <div class="centered" style="color: gray">
+    <h5>Colombo, Sri Lanka</h5>
   </div>
 
   <div
+    class="centered"
     style="
-      display: flex;
       flex-direction: row;
-      justify-content: center;
-      flex-flow: wrap;
-    "
+      flex-flow: wrap;"
   >
-    <p style="display: flex; align-items: center">
+    <!-- <p style="display: flex; align-items: center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
@@ -63,8 +60,8 @@
         ></path>
       </svg>
       google scholar &nbsp;
-    </p>
-    <p style="display: flex; align-items: center">
+    </p> -->
+    <p  class="centered" style="align-items: center;">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
@@ -90,9 +87,9 @@
           d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"
         ></path>
       </svg>
-      linked in &nbsp;
+      LinkedIn &nbsp;
     </p>
-    <p style="padding-top: 0.25em;">
+    <p style="padding-top: 0.25em">
       <i
         class="fa fa-phone"
         style="
@@ -102,9 +99,9 @@
           --fa-secondary-opacity: 0.9;
         "
       ></i>
-      "+94 77 123 4567" &nbsp;
+      "+94 76 254 7107" &nbsp;
     </p>
-    <p style="padding-top: 0.25em;">
+    <p style="padding-top: 0.25em">
       <i
         class="fa fa-envelope"
         style="
@@ -114,29 +111,7 @@
           --fa-secondary-opacity: 0.9;
         "
       ></i>
-   moreenmadhushani&#64;gmail.com
+      moreenmadhushani&#64;gmail.com
     </p>
   </div>
-
-  <p-fieldset>
-    <ng-template pTemplate="header">
-      <div class="flex align-items-center text-primary">
-        <span class="pi pi-user mr-2"></span>
-        <span class="font-bold text-lg">About Me</span>
-      </div>
-    </ng-template>
-    <p class="m-0">
-      As an experienced software developer with over 4.5 years of expertise, I
-      specialize in delivering cutting-edge engineering solutions across diverse
-      applications and technologies. My proficiency extends to full-stack
-      development, allowing me to craft interactive, user-centered website
-      designs that seamlessly scale.
-    </p>
-    <p>
-      I thrive on embracing emerging technologies and am dedicated to fostering
-      active collaboration within teams. My ability to excel in fast-paced,
-      deadline-driven environments makes me a valuable asset for any challenging
-      project.
-    </p>
-  </p-fieldset>
 </div>

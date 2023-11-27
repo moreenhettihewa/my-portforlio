@@ -1,0 +1,8 @@
+.contact-item{
+    padding-right: 1em;
+}
+
+.centered-item{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,10 @@
+.sidemenu-dial {
+    position: fixed;
+    z-index: 2
+}
+
+.sidemenu-dial-icon {
+    font-size: 2rem;
+    --fa-primary-color: #427d9d;
+    --fa-secondary-opacity: 0.9;
+}

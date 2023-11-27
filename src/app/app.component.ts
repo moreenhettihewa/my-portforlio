@@ -11,8 +11,6 @@ export class AppComponent implements OnInit {
 
   position: string = 'left';
 
-  @ViewChild('homeEl') homeEl!: ElementRef;
-
   ngOnInit(): void {
     this.items = [
       {
@@ -24,9 +22,10 @@ export class AppComponent implements OnInit {
         },
         command: () => {
           console.log('About');
-          document.getElementById('home-view')?.scrollIntoView({  behavior: 'smooth' });
+          document
+            .getElementById('home-view')
+            ?.scrollIntoView({ behavior: 'smooth' });
         },
-        // view: 'home-view'
       },
       {
         label: 'Education',
@@ -37,31 +36,37 @@ export class AppComponent implements OnInit {
         },
         command: () => {
           console.log('Esucation');
-          document.getElementById('education-view')?.scrollIntoView({  behavior: 'smooth' });
+          document
+            .getElementById('education-view')
+            ?.scrollIntoView({ behavior: 'smooth' });
         },
       },
       {
         label: 'Experience',
-        icon: 'fa fa-timeline',
+        icon: 'fa fa-briefcase',
         tooltipOptions: {
           tooltipLabel: 'Experience',
           tooltipPosition: 'right',
         },
         command: () => {
           console.log('Experience');
-          document.getElementById('experience-view')?.scrollIntoView({  behavior: 'smooth' });
+          document
+            .getElementById('experience-view')
+            ?.scrollIntoView({ behavior: 'smooth' });
         },
       },
       {
         label: 'Projects',
-        icon: 'fa fa-toolbox',
+        icon: 'fa fa-timeline',
         tooltipOptions: {
           tooltipLabel: 'Projects',
           tooltipPosition: 'right',
         },
         command: () => {
           console.log('Projects');
-          document.getElementById('projects-view')?.scrollIntoView({  behavior: 'smooth' });
+          document
+            .getElementById('projects-view')
+            ?.scrollIntoView({ behavior: 'smooth' });
         },
       },
       {
@@ -71,50 +76,8 @@ export class AppComponent implements OnInit {
           tooltipLabel: 'Blogs',
           tooltipPosition: 'right',
         },
-        command: () => {
-          console.log('Blogs');
-          
-        },
-      },
-      {
-        label: 'Contact',
-        icon: 'fa fa-circle-user',
-        tooltipOptions: {
-          tooltipLabel: 'Contact',
-          tooltipPosition: 'right',
-        },
-        command: () => {
-          console.log('Contact');
-        },
+        command: () => {},
       },
     ];
-  }
-
-  onClickView(view: string) {
-    console.log(view);
-    switch (view) {
-      case 'home-view':
-        this.homeEl.nativeElement.scrollIntoView({ behavior: 'smooth' });
-        console.log(view);
-        break;
-      case 'education-view':
-        this.position = 'left';
-        break;
-      case 'experience-view':
-        this.position = 'left';
-        break;
-      case 'projects-view':
-        this.position = 'left';
-        break;
-      case 'blogs-view':
-        this.position = 'left';
-        break;
-      case 'contact-view':
-        this.position = 'left';
-        break;
-      default:
-        this.position = 'left';
-        break;
-    }
   }
 }

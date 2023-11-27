@@ -18,6 +18,7 @@ import { SharedComponentModule } from './shared.module';
 import { EducationComponent } from './education/education.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
     declarations: [
@@ -37,6 +38,7 @@ import { ContactComponent } from './contact/contact.component';
         EducationComponent,
         ProjectsComponent,
         ContactComponent,
+        AboutComponent,
         SharedComponentModule    
     ],
     schemas:[CUSTOM_ELEMENTS_SCHEMA]

@@ -2,6 +2,21 @@
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
 
-body{
-    /* background-color:#9BBEC8 ; */
+.sub-container {
+    margin: 0 5%;
+}
+
+.sub-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text__bold {
+    font-weight: 700;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
 }

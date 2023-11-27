@@ -1,21 +1,15 @@
-<div style="position: fixed;z-index: 2">
+<div class="sidemenu-dial">
   <p-speedDial [model]="items" direction="down">
     <ng-template pTemplate="item" let-item [pTooltip]="'tooltipText'">
       <div class="p--speedDial-content" [pTooltip]="'tooltipText'">
-        <i class="fa-duotone" [ngClass]="item.icon"
-          style="
-            font-size: 2rem;
-            --fa-primary-color: #427d9d;
-            --fa-secondary-color: #164863;
-            --fa-secondary-opacity: 0.9;
-          "
-        ></i>
+        <i class="fa-duotone sidemenu-dial-icon" [ngClass]="item.icon"></i>
       </div>
     </ng-template>
   </p-speedDial>
 </div>
 
 <app-home></app-home>
+<app-about></app-about>
 <app-education></app-education>
 <app-experience></app-experience>
 <app-projects></app-projects>

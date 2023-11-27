@@ -1,10 +1,10 @@
-
 ::ng-deep {
-  
-    .p-timeline-event-separator{
+    .p-timeline-event-separator {
         margin-left: -72em;
     }
 }
 
-
-
+.sub-description {
+    font-size: 15px;
+    font-weight: 300;
+}

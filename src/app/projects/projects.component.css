@@ -5,3 +5,12 @@
         justify-content: center;
     }
 }
+
+.description{
+   font-weight: 500;
+}
+
+.sub-description{
+    font-size: 15px;
+    font-weight: 300;
+}
