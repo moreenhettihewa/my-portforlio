@@ -31,48 +31,54 @@
       dependencies.
     </p>
 
-    <p class="sub-description">
-      <strong>Payroll System Development: </strong> Played a key role in
-      developing a comprehensive payroll system for an Australian‐based company,
-      enabling multi‐user authentication, contract and timesheet creation,
-      invoice and document generation, and more.
-    </p>
+    <ng-container *ngIf="showRestfirst">
+      <p class="sub-description">
+        <strong>Payroll System Development: </strong> Played a key role in
+        developing a comprehensive payroll system for an Australian‐based company,
+        enabling multi‐user authentication, contract and timesheet creation,
+        invoice and document generation, and more.
+      </p>
+  
+      <p class="sub-description">
+        <strong>Back‐End Development: </strong> Collaborated on the back‐end
+        development of REST APIs essential for the payroll system, utilizing Java
+        in combination with the Quarkus framework to meet system requirements
+        effectively.
+      </p>
+  
+      <p class="sub-description">
+        <strong> Integration with Third‐Party Software: </strong> Gained
+        proficiency in integrating with third‐party software, such as Annature, an
+        e‐signature platform, and implemented various functionalities for contract
+        and timesheet signing within the system.
+      </p>
+  
+      <p class="sub-description">
+        <strong>CI/CD Pipeline and Deployment:</strong> Familiarized with AWS
+        CodeCommit for CI/CD pipeline activities and contributed to Docker
+        deployment processes.
+      </p>
+  
+      <p class="sub-description">
+        <strong>Code Refactor Task:</strong> Conducted comprehensive code
+        refactoring across front‐end and back‐end components, systematically
+        removing duplications, and integrating new technologies to enhance code
+        efficiency and maintainability. This initiative resulted in improved
+        system performance and alignment with industry standards.
+      </p>
+  
+      <p class="sub-description">
+        <strong>Crypto currency Integration:</strong> Spearheaded the successful
+        integration of XRP (Ripple) tokens into the application, demonstrating
+        advanced expertise in cryptocurrency and blockchain technology. This
+        achievement was realized while leading a team during a hackathon focused
+        on decentralized identity management.
+      </p>
+    </ng-container>
 
-    <p class="sub-description">
-      <strong>Back‐End Development: </strong> Collaborated on the back‐end
-      development of REST APIs essential for the payroll system, utilizing Java
-      in combination with the Quarkus framework to meet system requirements
-      effectively.
-    </p>
-
-    <p class="sub-description">
-      <strong> Integration with Third‐Party Software: </strong> Gained
-      proficiency in integrating with third‐party software, such as Annature, an
-      e‐signature platform, and implemented various functionalities for contract
-      and timesheet signing within the system.
-    </p>
-
-    <p class="sub-description">
-      <strong>CI/CD Pipeline and Deployment:</strong> Familiarized with AWS
-      CodeCommit for CI/CD pipeline activities and contributed to Docker
-      deployment processes.
-    </p>
-
-    <p class="sub-description">
-      <strong>Code Refactor Task:</strong> Conducted comprehensive code
-      refactoring across front‐end and back‐end components, systematically
-      removing duplications, and integrating new technologies to enhance code
-      efficiency and maintainability. This initiative resulted in improved
-      system performance and alignment with industry standards.
-    </p>
-
-    <p class="sub-description">
-      <strong>Crypto currency Integration:</strong> Spearheaded the successful
-      integration of XRP (Ripple) tokens into the application, demonstrating
-      advanced expertise in cryptocurrency and blockchain technology. This
-      achievement was realized while leading a team during a hackathon focused
-      on decentralized identity management.
-    </p>
+    <p-divider align="left">
+      <p-button [label]="showRestfirst? 'Show Less':'Show More'"  styleClass="p-button-outlined" (onClick)="onClickfirst()"></p-button>
+    </p-divider>
   </div>
 
   <p-divider align="left">
@@ -102,6 +108,7 @@
       system scalability.
     </p>
 
+   <ng-container *ngIf="showRestSecond">
     <p class="sub-description">
       <strong>Migration and Deployment:</strong> Played a crucial role in the
       migration process from SVN to Git repositories, preserving developer
@@ -154,6 +161,12 @@
       deployment of projects using Docker and Kubernetes for efficient and
       scalable application hosting.
     </p>
+
+
+   </ng-container>
+    <p-divider align="left">
+      <p-button [label]="showRestsecond? 'Show Less':'Show More'"  styleClass="p-button-outlined" (onClick)="onClickSecond()"></p-button>
+    </p-divider>
   </div>
 
   <p-divider align="left">
@@ -180,6 +193,9 @@
       timeseries prediction, achieving a high level of accuracy on a provided
       dataset.
     </p>
+
+    <ng-container *ngIf="showRestThird"
+    >
     <p class="sub-description">
       <strong>Face Recognition Web Application:</strong> Developed a web
       application for a face recognition system, utilizing the Angular
@@ -191,5 +207,10 @@
       in data visualization and analysis for a given dataset, using the R
       language to identify key features and insights.
     </p>
+  </ng-container>
+
+  <p-divider align="left">
+    <p-button [label]="showRestThird? 'Show Less':'Show More'"  styleClass="p-button-outlined" (onClick)="onClickThird()"></p-button>
+  </p-divider>
   </div>
 </div>
