@@ -7,9 +7,13 @@ import { MenuItem } from 'primeng/api';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  items: MenuItem[] | undefined;
+  items: MenuItem[];
 
   position: string = 'left';
+
+  constructor(){
+    this.items = [];
+  }
 
   ngOnInit(): void {
     this.items = [

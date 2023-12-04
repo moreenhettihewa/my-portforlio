@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SharedComponentModule } from '../shared.module';
+import { CommonModule } from '@angular/common';
 
 export interface EventItem {
   status?: string;
@@ -12,7 +13,7 @@ export interface EventItem {
 @Component({
   selector: 'app-experience',
   standalone: true,
-  imports: [SharedComponentModule],
+  imports: [SharedComponentModule,CommonModule],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.css',
 })
