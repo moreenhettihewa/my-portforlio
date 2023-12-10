@@ -8,3 +8,16 @@
     font-size: 15px;
     font-weight: 300;
 }
+
+.show-lessmore{
+    font-size: x-small;
+    ::ng-deep{
+        button.p-ripple{
+            font-size: x-small;
+        }
+        
+        .p-button{
+            font-size: x-small;
+        }
+    }
+}

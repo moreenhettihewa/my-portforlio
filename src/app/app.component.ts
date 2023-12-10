@@ -21,7 +21,6 @@ export class AppComponent implements OnInit {
           tooltipPosition: 'right',
         },
         command: () => {
-          console.log('About');
           document
             .getElementById('home-view')
             ?.scrollIntoView({ behavior: 'smooth' });
@@ -35,7 +34,6 @@ export class AppComponent implements OnInit {
           tooltipPosition: 'right',
         },
         command: () => {
-          console.log('Esucation');
           document
             .getElementById('education-view')
             ?.scrollIntoView({ behavior: 'smooth' });
@@ -49,11 +47,23 @@ export class AppComponent implements OnInit {
           tooltipPosition: 'right',
         },
         command: () => {
-          console.log('Experience');
           document
             .getElementById('experience-view')
             ?.scrollIntoView({ behavior: 'smooth' });
         },
+      },
+      {
+        label: 'Skills',
+        icon: 'fa fa-cogs',
+        tooltipOptions: {
+          tooltipLabel: 'Skills',
+          tooltipPosition: 'right',
+        },
+        command: () => {
+          document
+            .getElementById('skills-view')
+            ?.scrollIntoView({ behavior: 'smooth' });
+        },  
       },
       {
         label: 'Projects',
@@ -63,21 +73,20 @@ export class AppComponent implements OnInit {
           tooltipPosition: 'right',
         },
         command: () => {
-          console.log('Projects');
           document
             .getElementById('projects-view')
             ?.scrollIntoView({ behavior: 'smooth' });
         },
       },
-      {
-        label: 'Blogs',
-        icon: 'fa fa-note-sticky',
-        tooltipOptions: {
-          tooltipLabel: 'Blogs',
-          tooltipPosition: 'right',
-        },
-        command: () => {},
-      },
+      // {
+      //   label: 'Blogs',
+      //   icon: 'fa fa-note-sticky',
+      //   tooltipOptions: {
+      //     tooltipLabel: 'Blogs',
+      //     tooltipPosition: 'right',
+      //   },
+      //   command: () => {},
+      // },
     ];
   }
 }
